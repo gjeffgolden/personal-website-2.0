@@ -1,7 +1,7 @@
-import Header from "./components/Header";
+import EntryPoint from "./routes/EntryPoint";
 
 function App() {
-  return <Header />;
+  return <EntryPoint />;
 }
 
 export default App;

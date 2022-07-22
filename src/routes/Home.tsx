@@ -13,7 +13,16 @@ export const Home = () => {
         justifyContent: "center",
       }}
     >
-      <Typography variant="h1">Hello, world.</Typography>
+      <Box>
+        <Typography variant="body1">Hi, my name is...</Typography>
+        <Typography variant="h1">Jeff Golden</Typography>
+        <Typography variant="h4">
+          Frontend Developer | Writer | Adventurer
+        </Typography>
+        <Typography variant="body1">
+          This is going to be a longer paragraph with a bunch of info.
+        </Typography>
+      </Box>
     </Box>
   );
 };
