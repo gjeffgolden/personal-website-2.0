@@ -6,6 +6,9 @@ export const NavigationLink = styled(Link)({
   color: "#4dd672",
   padding: 8,
   textDecoration: "none",
+  "&:hover": {
+    color: "#FFFFFF",
+  },
 });
 
 export const NavigationGroup = styled("nav")({
