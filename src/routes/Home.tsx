@@ -1,36 +1,39 @@
+import TypewriterComponent from "typewriter-effect";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
+import { PageContainer, ParagraphContainer } from "../styles/styles";
+
 export const Home = () => {
   return (
-    <Box
-      sx={{
-        display: "flex",
-        flexFlow: "column",
-        width: "100vw",
-        height: "100vh",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
+    <PageContainer>
       <Box>
         <Typography variant="subtitle1" color="secondary">
-          Hi, my name is...
+          <TypewriterComponent
+            onInit={typewriter => {
+              typewriter.typeString("Hi, my name is...").start();
+            }}
+          />
         </Typography>
         <Typography variant="h1">Jeff Golden</Typography>
         <Typography variant="h4">
-          Frontend Developer | Writer | Adventurer
+          Frontend Developer | Writer | Expert Googler
         </Typography>
-        <p>
+        <ParagraphContainer>
           <Typography variant="subtitle2">
             This is going to be a longer paragraph with a bunch of info.
           </Typography>
-        </p>
-        <Button variant="outlined" color="secondary">
+        </ParagraphContainer>
+        <Button
+          href="https://github.com/gjeffgolden"
+          variant="outlined"
+          color="secondary"
+          target="_new"
+        >
           GitHub
         </Button>
       </Box>
-    </Box>
+    </PageContainer>
   );
 };

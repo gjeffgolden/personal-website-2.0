@@ -1,16 +1,13 @@
 import { Outlet } from "react-router-dom";
-
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-
 import NavigationLinks from "../components/NavigationLinks";
-
-// TODO: Hamburger menu with fun animation instead of static navbar?
+import { NavigationLink } from "../styles/styles";
 
 const Header = () => {
   return (
     <>
       <Box display="flex" flexDirection="row" justifyContent="space-between">
+        <NavigationLink to="/">GJG</NavigationLink>
         <NavigationLinks />
       </Box>
       <Outlet />
