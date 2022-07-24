@@ -22,10 +22,14 @@ export const Home = () => {
         <Typography variant="h4">
           Frontend Developer | Writer | Adventurer
         </Typography>
-        <Typography variant="body1">
-          This is going to be a longer paragraph with a bunch of info.
-        </Typography>
-        <Button variant="outlined">GitHub</Button>
+        <p>
+          <Typography variant="subtitle2">
+            This is going to be a longer paragraph with a bunch of info.
+          </Typography>
+        </p>
+        <Button variant="outlined" color="secondary">
+          GitHub
+        </Button>
       </Box>
     </Box>
   );

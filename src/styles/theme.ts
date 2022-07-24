@@ -1,6 +1,6 @@
-import { createTheme } from "@mui/material";
+import { createTheme, responsiveFontSizes } from "@mui/material";
 
-const theme = createTheme({
+let theme = createTheme({
   palette: {
     secondary: {
       main: "#4dd672",
@@ -32,7 +32,13 @@ const theme = createTheme({
     subtitle1: {
       fontFamily: "'Press Start 2P'",
     },
+    subtitle2: {
+      fontFamily: "'Press Start 2P'",
+      fontSize: "0.75rem",
+    },
   },
 });
+
+theme = responsiveFontSizes(theme);
 
 export default theme;
