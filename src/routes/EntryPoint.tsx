@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <>
       <Box display="flex" flexDirection="row" justifyContent="space-between">
-        <Typography>GJG</Typography>
+        <Typography variant="subtitle1">GJG</Typography>
         <NavigationLinks />
       </Box>
       <Outlet />

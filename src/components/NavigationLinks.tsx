@@ -1,13 +1,13 @@
-import { NavigationLink } from "../styles/styles";
+import { NavigationGroup, NavigationLink } from "../styles/styles";
 
 const NavigationLinks = () => {
   return (
-    <nav>
+    <NavigationGroup>
       <NavigationLink to="/about">About</NavigationLink>
       <NavigationLink to="/contact">Contact</NavigationLink>
       <NavigationLink to="/">Home</NavigationLink>
       <NavigationLink to="/portfolio">Portfolio</NavigationLink>
-    </nav>
+    </NavigationGroup>
   );
 };
 

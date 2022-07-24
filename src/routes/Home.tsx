@@ -14,7 +14,7 @@ export const Home = () => {
       }}
     >
       <Box>
-        <Typography variant="body1">Hi, my name is...</Typography>
+        <Typography variant="subtitle1">Hi, my name is...</Typography>
         <Typography variant="h1">Jeff Golden</Typography>
         <Typography variant="h4">
           Frontend Developer | Writer | Adventurer
