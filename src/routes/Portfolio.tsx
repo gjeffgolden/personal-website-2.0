@@ -1,3 +1,5 @@
+import { PageContainer } from "../styles/styles";
+
 export const Portfolio = () => {
-  return <div>Portfolio</div>;
+  return <PageContainer>Portfolio</PageContainer>;
 };

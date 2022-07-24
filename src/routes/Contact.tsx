@@ -1,3 +1,5 @@
+import { PageContainer } from "../styles/styles";
+
 export const Contact = () => {
-  return <div>Contact</div>;
+  return <PageContainer>Contact</PageContainer>;
 };

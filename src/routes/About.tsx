@@ -1,3 +1,5 @@
+import { PageContainer } from "../styles/styles";
+
 export const About = () => {
-  return <div>About</div>;
+  return <PageContainer>About</PageContainer>;
 };
