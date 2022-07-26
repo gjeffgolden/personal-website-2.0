@@ -7,6 +7,14 @@ let theme = createTheme({
     },
   },
   typography: {
+    body1: {
+      fontFamily: "Montserrat",
+    },
+    body2: {
+      fontFamily: "Source Code Pro",
+      fontSize: "1.3rem",
+      fontWeight: 200,
+    },
     button: {
       fontFamily: "'Press Start 2P'",
       color: "#4dd672",
@@ -19,6 +27,7 @@ let theme = createTheme({
     },
     h3: {
       fontFamily: "Source Code Pro",
+      fontWeight: 500,
     },
     h4: {
       fontFamily: "Source Code Pro",

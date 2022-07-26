@@ -20,7 +20,7 @@ export const About = () => {
             padding: "0px 20px 20px 0px",
           }}
         />
-        <Typography mt={8} width="48rem" variant="body1">
+        <Typography mt={8} width="42rem" variant="body2">
           I'm a frontend developer who opted out of a successful career in
           journalism and digital marketing to pursue a lifelong passion for
           computer science. Away from my computer, I'm an avid hiker, climber,
