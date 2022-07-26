@@ -27,10 +27,11 @@ export const Home = () => {
           </Typography>
         </ParagraphContainer>
         <Button
-          href="https://github.com/gjeffgolden"
-          variant="outlined"
           color="secondary"
+          href="https://github.com/gjeffgolden"
+          size="large"
           target="_new"
+          variant="outlined"
         >
           GitHub
         </Button>

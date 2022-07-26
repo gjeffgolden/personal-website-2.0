@@ -8,7 +8,8 @@ let theme = createTheme({
   },
   typography: {
     body1: {
-      fontFamily: "Montserrat",
+      fontFamily: "Source Code Pro",
+      fontWeight: 400,
     },
     body2: {
       fontFamily: "Source Code Pro",
