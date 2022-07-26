@@ -22,7 +22,8 @@ export const Home = () => {
         </Typography>
         <ParagraphContainer>
           <Typography variant="subtitle2">
-            This is going to be a longer paragraph with a bunch of info.
+            “Everything is held together with stories. That is all that is
+            holding us together, stories and compassion.” -Barry Lopez
           </Typography>
         </ParagraphContainer>
         <Button

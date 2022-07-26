@@ -27,8 +27,9 @@ export const PageContainer = styled(Box)({
   height: "80vh",
   alignItems: "center",
   justifyContent: "center",
+  overflow: "auto",
 });
 
 export const ParagraphContainer = styled("p")({
-  width: "80%",
+  width: "38rem",
 });
