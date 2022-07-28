@@ -33,3 +33,12 @@ export const PageContainer = styled(Box)({
 export const ParagraphContainer = styled("p")({
   width: "38rem",
 });
+
+export const SocialIconsContainer = styled("div")({
+  alignItems: "center",
+  display: "flex",
+  flexFlow: "row",
+  justifyContent: "space-evenly",
+  marginTop: "1rem",
+  width: "14rem",
+});

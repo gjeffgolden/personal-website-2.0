@@ -2,10 +2,10 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
+import SocialIconRow from "../components/SocialIconRow";
 import { PageContainer } from "../styles/styles";
 
 export const Contact = () => {
-  // TODO: Insert row of social media icons/links here
   return (
     <PageContainer>
       <Typography mb={4} variant="h3">
@@ -27,11 +27,12 @@ export const Contact = () => {
         <Button
           color="secondary"
           href="mailto:codebygolden@gmail.com"
-          sx={{ marginTop: "1.5rem", width: "11rem" }}
+          sx={{ margin: "1.5rem 0rem 1.5rem 0rem", width: "11rem" }}
           variant="outlined"
         >
-          Say Hello
+          Reach Out
         </Button>
+        <SocialIconRow />
       </Box>
     </PageContainer>
   );
