@@ -9,7 +9,7 @@ import App from "./App";
 import { Home } from "./routes/Home";
 import { About } from "./routes/About";
 import { Contact } from "./routes/Contact";
-import { Portfolio } from "./routes/Portfolio";
+import { TechStack } from "./routes/TechStack";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
@@ -21,7 +21,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
             <Route index element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/tech" element={<TechStack />} />
           </Route>
         </Routes>
       </BrowserRouter>

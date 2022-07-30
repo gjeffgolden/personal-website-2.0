@@ -5,7 +5,7 @@ const NavigationLinks = () => {
     <NavigationGroup>
       <NavigationLink to="/about">About</NavigationLink>
       <NavigationLink to="/contact">Contact</NavigationLink>
-      <NavigationLink to="/portfolio">Portfolio</NavigationLink>
+      <NavigationLink to="/tech">Portfolio</NavigationLink>
     </NavigationGroup>
   );
 };
