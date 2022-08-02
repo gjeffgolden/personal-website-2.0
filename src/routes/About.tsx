@@ -12,7 +12,7 @@ export const About = () => {
       <Box display="flex" flexDirection="row">
         <Avatar
           alt="Jeff Golden"
-          src="/src/assets/Golden-Headshot-Casual.JPG"
+          src="/Golden-Headshot-Casual.JPG"
           sx={{
             width: "12rem",
             height: "12rem",
