@@ -30,8 +30,9 @@ export const StyledPageContainer = styled(Box)({
   overflow: "auto",
 });
 
-export const StyledParagraphContainer = styled("p")({
+export const StyledParagraphContainer = styled("section")({
   width: "38rem",
+  padding: "1rem 0rem 1rem 0rem",
 });
 
 export const StyledRowContainer = styled("section")({

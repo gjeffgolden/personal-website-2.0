@@ -1,13 +1,13 @@
 import { Outlet } from "react-router-dom";
 import Box from "@mui/material/Box";
 import NavigationLinks from "../components/NavigationLinks";
-import { NavigationLink } from "../styles/styles";
+import { StyledNavigationLink } from "../styles/styles";
 
 const Header = () => {
   return (
     <>
       <Box display="flex" flexDirection="row" justifyContent="space-between">
-        <NavigationLink to="/">GJG</NavigationLink>
+        <StyledNavigationLink to="/">GJG</StyledNavigationLink>
         <NavigationLinks />
       </Box>
       <Outlet />

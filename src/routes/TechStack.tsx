@@ -1,6 +1,10 @@
-import usePortfolio from "../hooks/usePortfolio";
 import Button from "@mui/material/Button";
 import ButtonGroup from "@mui/material/ButtonGroup";
+
+import usePortfolio from "../hooks/usePortfolio";
+import ImageCard from "../components/ImageCard";
+import { coreStackCards } from "../constants/techCards";
+import { PortfolioCard } from "../models/models";
 import { StyledPageContainer, StyledRowContainer } from "../styles/styles";
 
 export const TechStack = () => {
@@ -11,6 +15,15 @@ export const TechStack = () => {
     selectedTab,
     Tabs,
   } = usePortfolio();
+
+  // TODO: Figure out why these cards ain't staggering and fix it
+
+  const renderCards = (cards: PortfolioCard[]) => {
+    return cards.map((card, index) => (
+      <ImageCard key={card.name} src={card.src} style={`--i: ${index}`} />
+    ));
+  };
+
   return (
     <StyledPageContainer>
       <ButtonGroup>
@@ -18,26 +31,7 @@ export const TechStack = () => {
         <Button onClick={handleClickOther}>Other Stuff I've Used</Button>
         <Button onClick={handleClickLearning}>What I'm Learning</Button>
       </ButtonGroup>
-      <StyledRowContainer>
-        <img
-          src="assets/react-original.svg"
-          height="100rem"
-          width="auto"
-          className="tech-card"
-        />
-        <img
-          src="assets/javascript-original.svg"
-          height="100rem"
-          width="auto"
-          className="tech-card"
-        />
-        <img
-          src="assets/typescript-original.svg"
-          height="100rem"
-          width="auto"
-          className="tech-card"
-        />
-      </StyledRowContainer>
+      <StyledRowContainer>{renderCards(coreStackCards)}</StyledRowContainer>
     </StyledPageContainer>
   );
 };
