@@ -16,11 +16,15 @@ export const TechStack = () => {
     Tabs,
   } = usePortfolio();
 
-  // TODO: Figure out why these cards ain't staggering and fix it
+  // TODO: Add in rest of cards and add button logic
 
   const renderCards = (cards: PortfolioCard[]) => {
     return cards.map((card, index) => (
-      <ImageCard key={card.name} src={card.src} style={`--i: ${index}`} />
+      <ImageCard
+        key={card.name}
+        src={card.src}
+        animationDelay={`${index / 4}s`}
+      />
     ));
   };
 
