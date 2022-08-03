@@ -1,11 +1,11 @@
 import Avatar from "@mui/material/Avatar";
 import Link from "@mui/material/Link";
 
-import { SocialIconsContainer } from "../styles/styles";
+import { StyledSocialIconsContainer } from "../styles/styles";
 
 const SocialIconRow = () => {
   return (
-    <SocialIconsContainer>
+    <StyledSocialIconsContainer>
       <Link href="https://github.com/gjeffgolden" target="_blank">
         <Avatar alt="GitHub Logo" src="assets/github-icon.png"></Avatar>
       </Link>
@@ -18,7 +18,7 @@ const SocialIconRow = () => {
       <Link href="https://medium.com/@gjeffgolden" target="_blank">
         <Avatar alt="Medium Logo" src="assets/medium-logo.png"></Avatar>
       </Link>
-    </SocialIconsContainer>
+    </StyledSocialIconsContainer>
   );
 };
 

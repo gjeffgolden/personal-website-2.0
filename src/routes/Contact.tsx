@@ -3,11 +3,11 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
 import SocialIconRow from "../components/SocialIconRow";
-import { PageContainer } from "../styles/styles";
+import { StyledPageContainer } from "../styles/styles";
 
 export const Contact = () => {
   return (
-    <PageContainer>
+    <StyledPageContainer>
       <Typography mb={4} variant="h3">
         Contact
       </Typography>
@@ -34,6 +34,6 @@ export const Contact = () => {
         </Button>
         <SocialIconRow />
       </Box>
-    </PageContainer>
+    </StyledPageContainer>
   );
 };

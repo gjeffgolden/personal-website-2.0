@@ -1,12 +1,12 @@
-import { NavigationGroup, NavigationLink } from "../styles/styles";
+import { StyledNavigationGroup, StyledNavigationLink } from "../styles/styles";
 
 const NavigationLinks = () => {
   return (
-    <NavigationGroup>
-      <NavigationLink to="/about">About</NavigationLink>
-      <NavigationLink to="/contact">Contact</NavigationLink>
-      <NavigationLink to="/tech">Portfolio</NavigationLink>
-    </NavigationGroup>
+    <StyledNavigationGroup>
+      <StyledNavigationLink to="/about">About</StyledNavigationLink>
+      <StyledNavigationLink to="/contact">Contact</StyledNavigationLink>
+      <StyledNavigationLink to="/tech">Portfolio</StyledNavigationLink>
+    </StyledNavigationGroup>
   );
 };
 

@@ -15,9 +15,24 @@
   -webkit-text-size-adjust: 100%;
 }
 
+.tech-card {
+  animation-name: fly-in;
+  animation-duration: 1s;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #f1f4f7;
     background-color: #1d1e1d;
+  }
+}
+
+@keyframes fly-in {
+  from {
+    transform: translateX(-100vw);
+  }
+
+  to {
+    transform: none;
   }
 }

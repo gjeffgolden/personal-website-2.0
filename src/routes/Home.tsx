@@ -3,11 +3,14 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
-import { PageContainer, ParagraphContainer } from "../styles/styles";
+import {
+  StyledPageContainer,
+  StyledParagraphContainer,
+} from "../styles/styles";
 
 export const Home = () => {
   return (
-    <PageContainer>
+    <StyledPageContainer>
       <Box>
         <Typography variant="subtitle1" color="secondary">
           <TypewriterComponent
@@ -20,12 +23,12 @@ export const Home = () => {
         <Typography variant="h4">
           Frontend Developer | Writer | Expert Googler
         </Typography>
-        <ParagraphContainer>
+        <StyledParagraphContainer>
           <Typography variant="subtitle2">
             “Everything is held together with stories. That is all that is
             holding us together, stories and compassion.” -Barry Lopez
           </Typography>
-        </ParagraphContainer>
+        </StyledParagraphContainer>
         <Button
           color="secondary"
           href="https://github.com/gjeffgolden"
@@ -36,6 +39,6 @@ export const Home = () => {
           GitHub
         </Button>
       </Box>
-    </PageContainer>
+    </StyledPageContainer>
   );
 };

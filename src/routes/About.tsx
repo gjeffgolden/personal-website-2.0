@@ -1,11 +1,11 @@
 import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import { PageContainer } from "../styles/styles";
+import { StyledPageContainer } from "../styles/styles";
 
 export const About = () => {
   return (
-    <PageContainer>
+    <StyledPageContainer>
       <Typography mb={4} variant="h3">
         About Me
       </Typography>
@@ -27,6 +27,6 @@ export const About = () => {
           backpacker, reader, sports fan and wildlife advocate.
         </Typography>
       </Box>
-    </PageContainer>
+    </StyledPageContainer>
   );
 };
