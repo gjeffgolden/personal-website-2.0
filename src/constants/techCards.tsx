@@ -21,7 +21,7 @@ export const coreStackCards = [
   },
   {
     src: "assets/jest-plain.svg",
-    name: "Jest/React Testing Library",
+    name: "Jest",
   },
 ];
 

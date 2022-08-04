@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 
 import Box from "@mui/material/Box";
 
+export const StyledFigCaption = styled("figcaption")({
+  textAlign: "center",
+  fontFamily: "Source Code Pro",
+  fontWeight: 400,
+});
+
 export const StyledNavigationLink = styled(Link)({
   fontFamily: "'Press Start 2P'",
   color: "#4dd672",

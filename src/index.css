@@ -15,8 +15,6 @@
   -webkit-text-size-adjust: 100%;
 
   --duration: 1s;
-  --stagger: 0.5s;
-  --interval: calc(var(--duration) - var(--stagger));
 }
 
 .tech-card {

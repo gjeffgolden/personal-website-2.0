@@ -24,9 +24,10 @@ const usePortfolio = () => {
   const getCards = (cards: PortfolioCard[]) => {
     return cards.map((card, index) => (
       <ImageCard
-        key={card.name}
-        src={card.src}
         animationDelay={`${index / 10}s`}
+        key={card.name}
+        name={card.name}
+        src={card.src}
       />
     ));
   };
