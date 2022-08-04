@@ -12,6 +12,11 @@ export const TechStack = () => {
     renderCards,
   } = usePortfolio();
 
+  // TODO: Names under cards
+  // TODO: Header for Portfolio page
+  // TODO: Button for projects
+  // TODO: Shrink icon sizes
+
   return (
     <StyledPageContainer>
       <ButtonGroup>
