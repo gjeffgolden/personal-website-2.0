@@ -1,5 +1,6 @@
 import Button from "@mui/material/Button";
 import ButtonGroup from "@mui/material/ButtonGroup";
+import Typography from "@mui/material/Typography";
 
 import usePortfolio from "../hooks/usePortfolio";
 import { StyledPageContainer, StyledRowContainer } from "../styles/styles";
@@ -10,19 +11,55 @@ export const TechStack = () => {
     handleClickOther,
     handleClickLearning,
     renderCards,
+    selectedTab,
+    Tabs,
   } = usePortfolio();
-
-  // TODO: Names under cards
-  // TODO: Header for Portfolio page
-  // TODO: Button for projects
-  // TODO: Shrink icon sizes
 
   return (
     <StyledPageContainer>
+      <Typography mb={4} variant="h3">
+        Portfolio
+      </Typography>
       <ButtonGroup>
-        <Button onClick={handleClickCore}>Core Stack</Button>
-        <Button onClick={handleClickOther}>Other Stuff I've Used</Button>
-        <Button onClick={handleClickLearning}>What I'm Learning</Button>
+        <Button
+          color="secondary"
+          onClick={handleClickCore}
+          sx={theme => ({
+            color: `${
+              selectedTab === Tabs.CORE
+                ? theme.palette.secondary
+                : theme.palette.success.main
+            }`,
+          })}
+        >
+          Core Stack
+        </Button>
+        <Button
+          color="secondary"
+          onClick={handleClickOther}
+          sx={theme => ({
+            color: `${
+              selectedTab === Tabs.OTHER
+                ? theme.palette.secondary
+                : theme.palette.success.main
+            }`,
+          })}
+        >
+          Other Tech I Like
+        </Button>
+        <Button
+          color="secondary"
+          onClick={handleClickLearning}
+          sx={theme => ({
+            color: `${
+              selectedTab === Tabs.LEARNING
+                ? theme.palette.secondary
+                : theme.palette.success.main
+            }`,
+          })}
+        >
+          What I'm Learning
+        </Button>
       </ButtonGroup>
       <StyledRowContainer>{renderCards()}</StyledRowContainer>
     </StyledPageContainer>
