@@ -38,7 +38,7 @@ export const StyledParagraphContainer = styled("section")({
 export const StyledRowContainer = styled("section")({
   display: "flex",
   flexFlow: "row",
-  width: "50vw",
+  width: "60vw",
   justifyContent: "space-evenly",
   padding: "8px",
 });
