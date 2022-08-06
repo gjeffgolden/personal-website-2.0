@@ -18,6 +18,18 @@ export const StyledNavigationLink = styled(Link)({
   },
 });
 
+export const StyledNavigationLinkWithBorder = styled(Link)({
+  color: "#4dd672",
+  border: "0.1rem solid #4dd672",
+  fontFamily: "'Press Start 2P'",
+  padding: 14,
+  textDecoration: "none",
+  "&:hover": {
+    color: "#FFFFFF",
+    borderColor: "#FFFFFF",
+  },
+});
+
 export const StyledNavigationGroup = styled("nav")({
   display: "flex",
   flexFlow: "row",

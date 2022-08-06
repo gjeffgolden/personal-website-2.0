@@ -1,4 +1,8 @@
-import { StyledNavigationGroup, StyledNavigationLink } from "../styles/styles";
+import {
+  StyledNavigationGroup,
+  StyledNavigationLink,
+  StyledNavigationLinkWithBorder,
+} from "../styles/styles";
 
 const NavigationLinks = () => {
   return (
@@ -6,13 +10,13 @@ const NavigationLinks = () => {
       <StyledNavigationLink to="/about">About</StyledNavigationLink>
       <StyledNavigationLink to="/contact">Contact</StyledNavigationLink>
       <StyledNavigationLink to="/tech">Portfolio</StyledNavigationLink>
-      <StyledNavigationLink
+      <StyledNavigationLinkWithBorder
         to="src/assets/Golden.Resume.pdf"
         target="_blank"
         download
       >
         Resume
-      </StyledNavigationLink>
+      </StyledNavigationLinkWithBorder>
     </StyledNavigationGroup>
   );
 };
