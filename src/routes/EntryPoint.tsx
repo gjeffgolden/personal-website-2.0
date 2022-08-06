@@ -3,11 +3,14 @@ import Box from "@mui/material/Box";
 import NavigationLinks from "../components/NavigationLinks";
 import { StyledNavigationLink } from "../styles/styles";
 
-// TODO: Media Queries and/or responsive styling
-// TODO: TransitionGroup experiment with Home page
-// TODO: Color of quote on homepage
-// TODO: Finalize logos on Portfolio page
-// TODO: Add Button for Project cards on Portfolio page
+// MVP TODO:
+// - Media Queries and/or responsive styling
+// - Resume
+
+// STRETCH TODO:
+// - TransitionGroup experiment with Home page
+// - Color of quote on homepage
+// - Add Button for Project cards on Portfolio page
 
 const Header = () => {
   return (

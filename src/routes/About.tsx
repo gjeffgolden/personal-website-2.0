@@ -7,9 +7,11 @@ import { StyledPageContainer } from "../styles/styles";
 export const About = () => {
   return (
     <StyledPageContainer>
-      <Typography mb={4} variant="h3">
-        About Me
-      </Typography>
+      <Slide direction="down" in={true}>
+        <Typography mb={4} variant="h3">
+          About Me
+        </Typography>
+      </Slide>
       <Box display="flex" flexDirection="row">
         <Slide direction="right" in={true}>
           <Avatar
@@ -23,12 +25,14 @@ export const About = () => {
             }}
           />
         </Slide>
-        <Typography mt={5} width="34rem" variant="body1">
-          I'm a frontend developer who opted out of a successful career in
-          journalism and digital marketing to pursue a lifelong passion for
-          computer science. Away from my computer, I'm an avid hiker, climber,
-          backpacker, reader, sports fan and wildlife advocate.
-        </Typography>
+        <Slide direction="up" in={true}>
+          <Typography mt={5} width="34rem" variant="body1">
+            I'm a frontend developer who opted out of a successful career in
+            journalism and digital marketing to pursue a lifelong passion for
+            computer science. Away from my computer, I'm an avid hiker, climber,
+            backpacker, reader, sports fan and wildlife advocate.
+          </Typography>
+        </Slide>
       </Box>
     </StyledPageContainer>
   );
