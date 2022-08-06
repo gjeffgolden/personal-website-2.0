@@ -43,16 +43,12 @@ export const otherTechCards = [
     name: "Tailwind",
   },
   {
-    src: "assets/heroku-original.svg",
-    name: "Heroku",
-  },
-  {
     src: "assets/formik-plain.png",
     name: "Formik",
   },
   {
     src: "assets/react-router.svg",
-    name: "React Router",
+    name: "Router",
   },
 ];
 
@@ -62,11 +58,19 @@ export const learningCards = [
     name: "Python",
   },
   {
+    src: "assets/django-icon.svg",
+    name: "Django",
+  },
+  {
     src: "vite.svg",
     name: "Vite",
   },
   {
-    src: "assets/django-plain.svg",
-    name: "Django",
+    src: "assets/remix-run.svg",
+    name: "Remix",
+  },
+  {
+    src: "assets/d3.svg",
+    name: "D3",
   },
 ];
