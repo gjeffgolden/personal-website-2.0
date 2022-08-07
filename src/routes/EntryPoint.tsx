@@ -14,13 +14,18 @@ import { StyledNavigationLink } from "../styles/styles";
 
 const Header = () => {
   return (
-    <>
-      <Box display="flex" flexDirection="row" justifyContent="space-between">
+    <Box height="100vh" width="100vw">
+      <Box
+        display="flex"
+        flexDirection="row"
+        justifyContent="space-between"
+        height="20vh"
+      >
         <StyledNavigationLink to="/">GJG</StyledNavigationLink>
         <NavigationLinks />
       </Box>
       <Outlet />
-    </>
+    </Box>
   );
 };
 

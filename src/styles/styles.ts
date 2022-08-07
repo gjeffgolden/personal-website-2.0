@@ -12,6 +12,7 @@ export const StyledNavigationLink = styled(Link)({
   fontFamily: "'Press Start 2P'",
   color: "#4dd672",
   padding: 16,
+  margin: 12,
   textDecoration: "none",
   "&:hover": {
     color: "#FFFFFF",
@@ -22,7 +23,9 @@ export const StyledNavigationLinkWithBorder = styled(Link)({
   color: "#4dd672",
   border: "0.1rem solid #4dd672",
   fontFamily: "'Press Start 2P'",
+  height: "1.5rem",
   padding: 14,
+  margin: 12,
   textDecoration: "none",
   "&:hover": {
     color: "#FFFFFF",
