@@ -4,7 +4,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 const MobileNavigation = () => {
   return (
     <StyledHamburgerMenu size="large">
-      <MenuIcon fontSize="large" color="warning" />
+      <MenuIcon fontSize="large" />
     </StyledHamburgerMenu>
   );
 };

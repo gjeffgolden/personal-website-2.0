@@ -12,7 +12,7 @@ export const StyledFigCaption = styled("figcaption")({
 export const StyledHamburgerMenu = styled(IconButton)({
   padding: 16,
   margin: 12,
-  color: "#FFFFF",
+  color: "#FFFFFF",
 });
 
 export const StyledNavigationLink = styled(Link)({
