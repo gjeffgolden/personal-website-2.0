@@ -1,3 +1,7 @@
+import Hidden from "@mui/material/Hidden";
+import IconButton from "@mui/material/IconButton";
+import MenuIcon from "@mui/icons-material/Menu";
+
 import {
   StyledNavigationGroup,
   StyledNavigationLink,
@@ -6,18 +10,20 @@ import {
 
 const NavigationLinks = () => {
   return (
-    <StyledNavigationGroup>
-      <StyledNavigationLink to="/about">About</StyledNavigationLink>
-      <StyledNavigationLink to="/contact">Contact</StyledNavigationLink>
-      <StyledNavigationLink to="/tech">Portfolio</StyledNavigationLink>
-      <StyledNavigationLinkWithBorder
-        to="src/assets/Golden.Resume.pdf"
-        target="_blank"
-        download
-      >
-        Resume
-      </StyledNavigationLinkWithBorder>
-    </StyledNavigationGroup>
+    <>
+      <StyledNavigationGroup>
+        <StyledNavigationLink to="/about">About</StyledNavigationLink>
+        <StyledNavigationLink to="/contact">Contact</StyledNavigationLink>
+        <StyledNavigationLink to="/tech">Portfolio</StyledNavigationLink>
+        <StyledNavigationLinkWithBorder
+          to="src/assets/Golden.Resume.pdf"
+          target="_blank"
+          download
+        >
+          Resume
+        </StyledNavigationLinkWithBorder>
+      </StyledNavigationGroup>
+    </>
   );
 };
 

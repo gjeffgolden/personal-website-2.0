@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Box from "@mui/material/Box";
-import NavigationLinks from "../components/NavigationLinks";
+import Navigation from "../components/Navigation";
 import { StyledNavigationLink } from "../styles/styles";
 
 // MVP TODO:
@@ -15,15 +15,7 @@ import { StyledNavigationLink } from "../styles/styles";
 const Header = () => {
   return (
     <Box height="100vh" width="100vw">
-      <Box
-        display="flex"
-        flexDirection="row"
-        justifyContent="space-between"
-        height="20vh"
-      >
-        <StyledNavigationLink to="/">GJG</StyledNavigationLink>
-        <NavigationLinks />
-      </Box>
+      <Navigation />
       <Outlet />
     </Box>
   );

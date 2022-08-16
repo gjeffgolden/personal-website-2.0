@@ -1,11 +1,18 @@
 import { Link } from "react-router-dom";
 import { styled } from "@mui/material";
 import Box from "@mui/material/Box";
+import IconButton from "@mui/material/IconButton";
 
 export const StyledFigCaption = styled("figcaption")({
   textAlign: "center",
   fontFamily: "Source Code Pro",
   fontWeight: 400,
+});
+
+export const StyledHamburgerMenu = styled(IconButton)({
+  padding: 16,
+  margin: 12,
+  color: "#FFFFF",
 });
 
 export const StyledNavigationLink = styled(Link)({
