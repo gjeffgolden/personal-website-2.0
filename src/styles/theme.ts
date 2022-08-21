@@ -2,6 +2,7 @@ import { createTheme, responsiveFontSizes } from "@mui/material";
 
 let theme = createTheme({
   palette: {
+    primary: { main: "#FFFFFF" },
     secondary: {
       main: "#4dd672",
     },
@@ -18,7 +19,7 @@ let theme = createTheme({
     },
     button: {
       fontFamily: "'Press Start 2P'",
-      color: "#4dd672",
+      color: "#4DD672",
     },
     h1: {
       fontFamily: "Source Code Pro",

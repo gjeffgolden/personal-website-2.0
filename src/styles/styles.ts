@@ -9,24 +9,24 @@ export const StyledFigCaption = styled("figcaption")({
   fontWeight: 400,
 });
 
-export const StyledHamburgerMenu = styled(IconButton)({
+export const StyledHamburgerMenu = styled(IconButton)(({ theme }) => ({
   padding: 16,
   margin: 12,
-  color: "#FFFFFF",
-});
+  color: theme.palette.secondary.main,
+}));
 
-export const StyledNavigationLink = styled(Link)({
+export const StyledNavigationLink = styled(Link)(({ theme }) => ({
   fontFamily: "'Press Start 2P'",
   color: "#4dd672",
   padding: 16,
   margin: 12,
   textDecoration: "none",
   "&:hover": {
-    color: "#FFFFFF",
+    color: theme.palette.primary.main,
   },
-});
+}));
 
-export const StyledNavigationLinkWithBorder = styled(Link)({
+export const StyledNavigationLinkWithBorder = styled(Link)(({ theme }) => ({
   color: "#4dd672",
   border: "0.1rem solid #4dd672",
   fontFamily: "'Press Start 2P'",
@@ -35,10 +35,10 @@ export const StyledNavigationLinkWithBorder = styled(Link)({
   margin: 12,
   textDecoration: "none",
   "&:hover": {
-    color: "#FFFFFF",
-    borderColor: "#FFFFFF",
+    color: theme.palette.primary.main,
+    borderColor: theme.palette.primary.main,
   },
-});
+}));
 
 export const StyledNavigationGroup = styled("nav")({
   display: "flex",
