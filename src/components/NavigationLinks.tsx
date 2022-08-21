@@ -1,7 +1,3 @@
-import Hidden from "@mui/material/Hidden";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
-
 import {
   StyledNavigationGroup,
   StyledNavigationLink,
