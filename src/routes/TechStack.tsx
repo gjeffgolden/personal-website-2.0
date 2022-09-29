@@ -20,7 +20,7 @@ export const TechStack = () => {
       <Typography mb={4} variant="h3">
         Portfolio
       </Typography>
-      <ButtonGroup>
+      <ButtonGroup sx={{ maxWidth: "90vw" }}>
         <Button
           color="secondary"
           onClick={handleClickCore}

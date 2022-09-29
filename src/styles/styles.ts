@@ -78,3 +78,11 @@ export const StyledSocialIconsContainer = styled("div")({
   marginTop: "1rem",
   width: "14rem",
 });
+
+export const StyledResponsiveContainer = styled(Box)(({ theme }) => ({
+  display: "flex",
+  flexDirection: "row",
+  [theme.breakpoints.down("sm")]: {
+    flexDirection: "column",
+  },
+}));

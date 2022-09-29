@@ -16,6 +16,7 @@ export const Contact = () => {
         display="flex"
         flexDirection="column"
         justifyContent="center"
+        maxWidth="90vw"
         width="32rem"
       >
         <Typography paragraph variant="body1">
