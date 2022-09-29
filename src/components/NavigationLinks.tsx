@@ -1,8 +1,6 @@
-import {
-  StyledNavigationGroup,
-  StyledNavigationLink,
-  StyledNavigationLinkWithBorder,
-} from "../styles/styles";
+import { StyledNavigationGroup, StyledNavigationLink } from "../styles/styles";
+
+import ResumeButton from "./ResumeButton";
 
 const NavigationLinks = () => {
   return (
@@ -11,13 +9,7 @@ const NavigationLinks = () => {
         <StyledNavigationLink to="/about">About</StyledNavigationLink>
         <StyledNavigationLink to="/contact">Contact</StyledNavigationLink>
         <StyledNavigationLink to="/tech">Portfolio</StyledNavigationLink>
-        <StyledNavigationLinkWithBorder
-          to="src/assets/Golden.Resume.pdf"
-          target="_blank"
-          download
-        >
-          Resume
-        </StyledNavigationLinkWithBorder>
+        <ResumeButton />
       </StyledNavigationGroup>
     </>
   );

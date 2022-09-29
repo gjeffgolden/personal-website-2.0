@@ -26,7 +26,7 @@ export const StyledNavigationLink = styled(Link)(({ theme }) => ({
   },
 }));
 
-export const StyledNavigationLinkWithBorder = styled(Link)(({ theme }) => ({
+export const StyledBorderedLink = styled(Link)(({ theme }) => ({
   color: "#4dd672",
   border: "0.1rem solid #4dd672",
   fontFamily: "'Press Start 2P'",

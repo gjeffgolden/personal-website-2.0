@@ -1,9 +1,12 @@
 import { useState } from "react";
 
 import { StyledHamburgerMenu, StyledNavigationLink } from "../styles/styles";
+
 import MenuIcon from "@mui/icons-material/Menu";
 import Box from "@mui/material/Box";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
+
+import ResumeButton from "./ResumeButton";
 
 const MobileNavigation = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -38,6 +41,7 @@ const MobileNavigation = () => {
           <StyledNavigationLink to="/about">About</StyledNavigationLink>
           <StyledNavigationLink to="/contact">Contact</StyledNavigationLink>
           <StyledNavigationLink to="/tech">Portfolio</StyledNavigationLink>
+          <ResumeButton />
         </Box>
       </SwipeableDrawer>
     </>
