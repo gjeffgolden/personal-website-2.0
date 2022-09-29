@@ -1,9 +1,11 @@
+import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import ButtonGroup from "@mui/material/ButtonGroup";
+import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 
 import usePortfolio from "../hooks/usePortfolio";
-import { StyledPageContainer, StyledRowContainer } from "../styles/styles";
+import { StyledPageContainer } from "../styles/styles";
 
 export const TechStack = () => {
   const {
@@ -61,7 +63,11 @@ export const TechStack = () => {
           What I'm Learning
         </Button>
       </ButtonGroup>
-      <StyledRowContainer>{renderCards()}</StyledRowContainer>
+      <Box mt={2} justifyContent="center">
+        <Grid container spacing={0.5} justifyContent="center">
+          {renderCards()}
+        </Grid>
+      </Box>
     </StyledPageContainer>
   );
 };

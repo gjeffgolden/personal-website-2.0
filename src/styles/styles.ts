@@ -50,24 +50,18 @@ export const StyledNavigationGroup = styled("nav")({
 export const StyledPageContainer = styled(Box)({
   display: "flex",
   flexFlow: "column",
+  marginTop: "2rem",
   width: "100vw",
-  height: "80vh",
+  maxHeight: "100vh",
   alignItems: "center",
-  justifyContent: "center",
+  justifyContent: "flex-start",
   overflow: "auto",
 });
 
 export const StyledParagraphContainer = styled("section")({
   width: "38rem",
+  maxWidth: "90vw",
   padding: "1rem 0rem 1rem 0rem",
-});
-
-export const StyledRowContainer = styled("section")({
-  display: "flex",
-  flexFlow: "row",
-  width: "60vw",
-  justifyContent: "space-evenly",
-  padding: "8px",
 });
 
 export const StyledSocialIconsContainer = styled("div")({

@@ -11,7 +11,7 @@ import {
 export const Home = () => {
   return (
     <StyledPageContainer>
-      <Box>
+      <Box maxWidth="90vw">
         <Typography variant="subtitle1" color="secondary">
           <TypewriterComponent
             onInit={typewriter => {
@@ -20,7 +20,7 @@ export const Home = () => {
           />
         </Typography>
         <Typography variant="h1">Jeff Golden</Typography>
-        <Typography variant="h4">
+        <Typography variant="h4" color="orange">
           Frontend Developer | Writer | Expert Googler
         </Typography>
         <StyledParagraphContainer>

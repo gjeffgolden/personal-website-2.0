@@ -1,5 +1,4 @@
 import Avatar from "@mui/material/Avatar";
-import Box from "@mui/material/Box";
 import Slide from "@mui/material/Slide";
 import Typography from "@mui/material/Typography";
 import {
@@ -10,13 +9,13 @@ import {
 export const About = () => {
   return (
     <StyledPageContainer>
-      <Slide direction="down" in={true}>
+      <Slide direction="right" in={true}>
         <Typography mb={4} variant="h3">
           About Me
         </Typography>
       </Slide>
       <StyledResponsiveContainer display="flex" flexDirection="row">
-        <Slide direction="right" in={true}>
+        <Slide direction="left" in={true}>
           <Avatar
             alt="Jeff Golden"
             src="assets/Golden-Headshot-Casual.JPG"
@@ -31,7 +30,7 @@ export const About = () => {
             })}
           />
         </Slide>
-        <Slide direction="up" in={true}>
+        <Slide direction="left" in={true}>
           <Typography mt={5} width="34rem" maxWidth="90vw" variant="body1">
             I'm a frontend developer who opted out of a successful career in
             journalism and digital marketing to pursue a lifelong passion for
