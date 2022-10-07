@@ -4,11 +4,7 @@ import DownloadIcon from "@mui/icons-material/Download";
 import Typography from "@mui/material/Typography";
 const ResumeButton = () => {
   return (
-    <StyledBorderedLink
-      to="src/assets/Golden.Resume.pdf"
-      target="_blank"
-      download
-    >
+    <StyledBorderedLink to="assets/Golden.Resume.pdf" target="_blank" download>
       <Box display="flex" flexDirection="row" justifyContent="space-between">
         <Typography pr={3} variant="subtitle1">
           Resume
