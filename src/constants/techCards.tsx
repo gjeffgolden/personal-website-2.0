@@ -62,7 +62,7 @@ export const learningCards = [
     name: "Django",
   },
   {
-    src: "vite.svg",
+    src: "assets/vite.svg",
     name: "Vite",
   },
   {
