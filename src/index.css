@@ -17,6 +17,17 @@
   --duration: 1s;
 }
 
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+#root {
+  height: 100%;
+}
+
 .tech-card {
   animation-name: fly-in;
   animation-duration: var(--duration);
