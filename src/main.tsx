@@ -11,6 +11,7 @@ import { About } from "./routes/About";
 import { Contact } from "./routes/Contact";
 import { TechStack } from "./routes/TechStack";
 import "./index.css";
+import Prompts from "./routes/Prompts";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
@@ -22,6 +23,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/tech" element={<TechStack />} />
+            <Route path="/prompts" element={<Prompts />} />
           </Route>
         </Routes>
       </BrowserRouter>
