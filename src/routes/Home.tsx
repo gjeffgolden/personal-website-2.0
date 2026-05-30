@@ -14,14 +14,14 @@ export const Home = () => {
       <Box maxWidth="90vw">
         <Typography variant="subtitle1" component="p" color="secondary">
           <TypewriterComponent
-            onInit={typewriter => {
+            onInit={(typewriter) => {
               typewriter.typeString("Hi, my name is...").start();
             }}
           />
         </Typography>
         <Typography variant="h1">Jeff Golden</Typography>
         <Typography variant="h4" component="h2" color="orange">
-          Frontend Developer | Writer | Expert Googler
+          Engineering Manager | Full-Stack Developer | Expert Flibbertigibbeter
         </Typography>
         <StyledParagraphContainer>
           <Typography variant="subtitle2" component="p">
