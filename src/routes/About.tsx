@@ -18,7 +18,8 @@ export const About = () => {
         <Slide direction="left" in={true}>
           <Avatar
             alt="Jeff Golden"
-            src="assets/Golden-Headshot-Casual.JPG"
+            src="assets/Golden-Headshot-Casual.webp"
+            imgProps={{ loading: "lazy", width: 192, height: 192 }}
             sx={theme => ({
               width: "12rem",
               height: "12rem",
