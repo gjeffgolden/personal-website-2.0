@@ -8,7 +8,7 @@ import { StyledPageContainer } from "../styles/styles";
 export const Contact = () => {
   return (
     <StyledPageContainer>
-      <Typography mb={4} variant="h3">
+      <Typography mb={4} variant="h3" component="h1">
         Contact
       </Typography>
       <Box

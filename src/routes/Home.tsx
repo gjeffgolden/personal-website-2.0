@@ -12,7 +12,7 @@ export const Home = () => {
   return (
     <StyledPageContainer>
       <Box maxWidth="90vw">
-        <Typography variant="subtitle1" color="secondary">
+        <Typography variant="subtitle1" component="p" color="secondary">
           <TypewriterComponent
             onInit={typewriter => {
               typewriter.typeString("Hi, my name is...").start();
@@ -20,11 +20,11 @@ export const Home = () => {
           />
         </Typography>
         <Typography variant="h1">Jeff Golden</Typography>
-        <Typography variant="h4" color="orange">
+        <Typography variant="h4" component="h2" color="orange">
           Frontend Developer | Writer | Expert Googler
         </Typography>
         <StyledParagraphContainer>
-          <Typography variant="subtitle2">
+          <Typography variant="subtitle2" component="p">
             “Everything is held together with stories. That is all that is
             holding us together, stories and compassion.” -Barry Lopez
           </Typography>
@@ -33,7 +33,9 @@ export const Home = () => {
           color="secondary"
           href="https://github.com/gjeffgolden"
           size="large"
-          target="_new"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub profile (opens in a new tab)"
           variant="outlined"
         >
           GitHub

@@ -17,7 +17,12 @@ const MobileNavigation = () => {
 
   return (
     <>
-      <StyledHamburgerMenu size="large" onClick={toggleDrawer}>
+      <StyledHamburgerMenu
+        size="large"
+        onClick={toggleDrawer}
+        aria-label="Open navigation menu"
+        aria-expanded={openDrawer}
+      >
         <MenuIcon fontSize="large" />
       </StyledHamburgerMenu>
       <SwipeableDrawer
@@ -27,6 +32,8 @@ const MobileNavigation = () => {
         onClose={toggleDrawer}
       >
         <Box
+          component="nav"
+          aria-label="Main"
           display="flex"
           height="100%"
           width="100%"

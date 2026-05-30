@@ -10,7 +10,7 @@ export const About = () => {
   return (
     <StyledPageContainer>
       <Slide direction="right" in={true}>
-        <Typography mb={4} variant="h3">
+        <Typography mb={4} variant="h3" component="h1">
           About Me
         </Typography>
       </Slide>

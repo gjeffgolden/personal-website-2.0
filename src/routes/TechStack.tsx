@@ -19,7 +19,7 @@ export const TechStack = () => {
 
   return (
     <StyledPageContainer>
-      <Typography mb={4} variant="h3">
+      <Typography mb={4} variant="h3" component="h1">
         Portfolio
       </Typography>
       <ButtonGroup sx={{ maxWidth: "90vw" }}>
