@@ -21,7 +21,7 @@ export const Home = () => {
         </Typography>
         <Typography variant="h1">Jeff Golden</Typography>
         <Typography variant="h4" component="h2" color="orange">
-          Engineering Manager | Full-Stack Developer | Expert Flibbertigibbeter
+          Engineering Manager | Full-Stack Developer
         </Typography>
         <StyledParagraphContainer>
           <Typography variant="subtitle2" component="p">
