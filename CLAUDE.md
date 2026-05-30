@@ -64,6 +64,10 @@ Conventions: page-level route components go in `routes/`; anything reused across
 
 Vite only exposes variables prefixed `VITE_` to the client, read via `import.meta.env`. `.env` is gitignored. Note that anything read via `import.meta.env` ships to the browser — never put server-only secrets there.
 
+## Deployment
+
+Hosted on Vercel, linked to the `gjeffgolden/personal-website-2.0` GitHub repo. Pushing to `main` triggers a production deploy automatically (Vercel auto-detects the Vite preset: `npm run build` → `dist/`). So the deploy flow is just `git push origin main` — no manual deploy step. SPA routing is handled by `public/_redirects` (`/* /index.html 200`) so deep links survive a refresh. There is no `vercel.json`; build settings live in the Vercel dashboard. The local `.vercel/` folder is the CLI link (gitignored) and is separate from the GitHub integration; to confirm auto-deploy is wired up, check the Vercel project's Settings → Git. After pushing, verify the build under the dashboard's Deployments tab.
+
 ## Notes
 
 - All application code lives in `src/`. There is no backend; the site is a static SPA.
