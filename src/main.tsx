@@ -19,6 +19,10 @@ const Contact = lazy(() =>
 const TechStack = lazy(() =>
   import("./routes/TechStack").then(m => ({ default: m.TechStack })),
 );
+const Blog = lazy(() => import("./routes/Blog").then(m => ({ default: m.Blog })));
+const BlogPost = lazy(() =>
+  import("./routes/BlogPost").then(m => ({ default: m.BlogPost })),
+);
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
@@ -31,6 +35,8 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/tech" element={<TechStack />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:slug" element={<BlogPost />} />
             </Route>
           </Routes>
         </Suspense>
