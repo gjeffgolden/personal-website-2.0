@@ -72,7 +72,9 @@ Vite only exposes variables prefixed `VITE_` to the client, read via `import.met
 
 ## Deployment
 
-Hosted on Vercel, linked to the `gjeffgolden/personal-website-2.0` GitHub repo. Pushing to `main` triggers a production deploy automatically (Vercel auto-detects the Vite preset: `npm run build` → `dist/`). So the deploy flow is just `git push origin main` — no manual deploy step. SPA routing is handled by `public/_redirects` (`/* /index.html 200`) so deep links survive a refresh. There is no `vercel.json`; build settings live in the Vercel dashboard. The local `.vercel/` folder is the CLI link (gitignored) and is separate from the GitHub integration; to confirm auto-deploy is wired up, check the Vercel project's Settings → Git. After pushing, verify the build under the dashboard's Deployments tab.
+Hosted on **Netlify**, linked to the `gjeffgolden/personal-website-2.0` GitHub repo. Pushing to `main` triggers a production deploy automatically — the deploy flow is just `git push origin main`, no manual step. Netlify's configured build command is `yarn build` (publish dir `dist/`); SPA routing is handled by `public/_redirects` (`/* /index.html 200`) so deep links survive a refresh. There is no `netlify.toml` — build settings live in the Netlify UI.
+
+**Node version:** the Node major is pinned via `.nvmrc` (`20`) and `engines.node` (`>=18`) in `package.json`. This matters because **Vite 5 requires Node 18+**; without the pin, Netlify's older default Node (16) fails the build with `crypto$2.getRandomValues is not a function` during `vite build`. After pushing, verify under the Netlify dashboard's Deploys tab.
 
 ## Notes
 
